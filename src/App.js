@@ -1,3 +1,4 @@
+import Label from './Label';
 import logo from './logo.svg';
 // import './App.css';
 
@@ -9,9 +10,9 @@ function ListItem(){
         This is very big description
       </div>
       <div className='list-label'>
-        <span>Label 1</span>
-        <span>Label 2</span>
-        <span>Label 3</span>                
+        <Label/>
+        <Label/>
+        <Label/>       
       </div>
       <hr/>
     </div> 
@@ -30,13 +31,11 @@ function App() {
       </header>
       <div className='app-body'>      
           <div className='app-list'>
-          {ListItem()}
-          {ListItem()}
-          {ListItem()}
           
-           {/* <ListItem/>
+          
            <ListItem/>
-           <ListItem/> */}
+           <ListItem/>
+           <ListItem/>
 
           </div>        
       </div>
