@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './list/Label.css'
 // function Label() {
 //   return (
 //     <span>label A </span>
@@ -10,7 +10,7 @@ import React from 'react'
 
 class Label extends React.Component{
     render(){
-        return <span> label kk </span>
+        return <span className='list-label-item'> label kk </span>
     }
 }
 

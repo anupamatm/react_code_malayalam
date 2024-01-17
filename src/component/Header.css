@@ -1,0 +1,17 @@
+.App-header{
+    height: 100px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.App-header span{
+    margin: 5px;
+    padding: 10px;
+}
+.header-title{
+    font-weight: bolder;
+    font-size: 22px;
+}

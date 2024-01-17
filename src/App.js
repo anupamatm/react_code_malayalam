@@ -1,5 +1,9 @@
 import Label from './Label';
+import Header from './component/Header';
+import Footer from './component/Footer'
+import './list/List.css'
 import logo from './logo.svg';
+
 // import './App.css';
 
 function ListItem(){
@@ -7,8 +11,12 @@ function ListItem(){
     <div className='list-item'>
       <hr/>
       <div className='list-title'>
+        My Title Two
+      </div>
+      <div className='list-description'>
         This is very big description
       </div>
+      
       <div className='list-label'>
         <Label/>
         <Label/>
@@ -22,13 +30,7 @@ function ListItem(){
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <span className='header-title'>code malayalam</span>
-        <span>Home</span>
-        <span>Usage</span>
-        <span>Settings</span>
-        <span>Logout</span>
-      </header>
+      <Header/>
       <div className='app-body'>      
           <div className='app-list'>
           
@@ -39,9 +41,7 @@ function App() {
 
           </div>        
       </div>
-      <div className='app-footer'>
-          Copyright codemalayalm.in All Right Reserved
-      </div>
+     <Footer/>
     </div>
   );
 }
