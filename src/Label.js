@@ -13,7 +13,12 @@ class Label extends React.Component{
         const props = this.props;
         console.log("label props",props)
         const style = props.isActive ? {background:'green'} : {background:'orange'}
-        return <span className='list-label-item' style={style}> label kk </span>
+        return <span onClick={props.onAction
+            // ()=>{
+            // console.log('clicked');
+            // props.onAction();
+        // }
+    } className='list-label-item' style={style}> {props.isActive ? "Active" : "Non Active"} </span>
     }
 }
 

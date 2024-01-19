@@ -7,11 +7,23 @@ import List from './list/List';
 // import './App.css';
 
 
-const obj={
-  title:"Appointment for October",
-  descr:"The patient is resheduled to october",
-  isActive:true
-};
+const arr=[
+  {
+    title:"Appointment for October",
+    descr:"The patient is resheduled to october",
+    isActive:true
+  },
+  {
+    title:"Appointment for October",
+    descr:"The patient is resheduled to october",
+    isActive:false
+  },
+  {
+    title:"Appointment for October",
+    descr:"The patient is resheduled to october",
+    isActive:true
+  }
+];
 
 function App() {
   return (
@@ -19,8 +31,14 @@ function App() {
       <Header/>
       <div className='app-body'>      
           <div className='app-list'>
+
+            {
+              arr.map((obj)=>{
+               return <List key={obj.title} title={obj.title} descr={obj.descr} isActive={obj.isActive}/>
+
+              })
+            }
           
-          <List title={obj.title} descr={obj.descr} isActive={obj.isActive}/>
          
 
           </div>        

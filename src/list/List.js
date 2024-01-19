@@ -1,20 +1,34 @@
 import React from 'react'
 import Label from '../Label'
 
-function List(props) {
+function List(props
+//   {
+//   title,
+//   descr,
+//   isActive
+// }
+) {
     console.log(props)
+    const{
+      title,
+      descr,
+      isActive
+    }=props;
+
   return (
     <div className='list-item'>
       <hr/>
       <div className='list-title'>
-        {props.title}
+        {title}
       </div>
       <div className='list-description'>
-        {props.descr}
+        {descr}
       </div>
       
       <div className='list-label'>
-        <Label isActive={props.isActive} />
+        <Label onAction={()=>{
+          console.log('parent clicked')
+        }} isActive={isActive} />
              
       </div>
       <hr/>
