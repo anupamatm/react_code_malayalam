@@ -17,7 +17,7 @@ function List(props
 
   return (
     <div className='list-item'>
-      <hr/>
+     
       <div className='list-title'>
         {title}
       </div>
@@ -31,7 +31,7 @@ function List(props
         }} isActive={isActive} />
              
       </div>
-      <hr/>
+     
     </div> 
   )
 }

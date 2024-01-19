@@ -1,0 +1,11 @@
+.list-tools{
+    padding: 20px;
+    margin-bottom: 50px;
+    margin: 10px;
+    /* background: rgb(249,248,248); */
+    border: 2px solid #cccc;
+}
+
+.list-footer{
+    font-size: 14px;
+}

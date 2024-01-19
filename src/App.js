@@ -4,6 +4,8 @@ import Footer from './component/Footer'
 import './list/List.css'
 import logo from './logo.svg';
 import List from './list/List';
+import Tools from './component/Tools';
+
 // import './App.css';
 
 
@@ -27,9 +29,11 @@ const arr=[
 
 function App() {
   return (
+   
     <div className="App">
       <Header/>
-      <div className='app-body'>      
+      <div className='app-body'> 
+      <Tools>     
           <div className='app-list'>
 
             {
@@ -37,14 +41,14 @@ function App() {
                return <List key={obj.title} title={obj.title} descr={obj.descr} isActive={obj.isActive}/>
 
               })
-            }
-          
-         
+            }        
 
-          </div>        
+          </div> 
+          </Tools>       
       </div>
      <Footer/>
     </div>
+   
   );
 }
 
