@@ -10,7 +10,10 @@ import './list/Label.css'
 
 class Label extends React.Component{
     render(){
-        return <span className='list-label-item'> label kk </span>
+        const props = this.props;
+        console.log("label props",props)
+        const style = props.isActive ? {background:'green'} : {background:'orange'}
+        return <span className='list-label-item' style={style}> label kk </span>
     }
 }
 

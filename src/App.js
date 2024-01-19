@@ -3,29 +3,15 @@ import Header from './component/Header';
 import Footer from './component/Footer'
 import './list/List.css'
 import logo from './logo.svg';
-
+import List from './list/List';
 // import './App.css';
 
-function ListItem(){
-  return(
-    <div className='list-item'>
-      <hr/>
-      <div className='list-title'>
-        My Title Two
-      </div>
-      <div className='list-description'>
-        This is very big description
-      </div>
-      
-      <div className='list-label'>
-        <Label/>
-        <Label/>
-        <Label/>       
-      </div>
-      <hr/>
-    </div> 
-  )
-}
+
+const obj={
+  title:"Appointment for October",
+  descr:"The patient is resheduled to october",
+  isActive:true
+};
 
 function App() {
   return (
@@ -34,10 +20,8 @@ function App() {
       <div className='app-body'>      
           <div className='app-list'>
           
-          
-           <ListItem/>
-           <ListItem/>
-           <ListItem/>
+          <List title={obj.title} descr={obj.descr} isActive={obj.isActive}/>
+         
 
           </div>        
       </div>
